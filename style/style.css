@@ -86,32 +86,56 @@ header{
     #social{
        
         position: relative;
-        top:-130px;
+        top:-110px;
         
         
     
     }
-
     #social img{
-        width: 20%;
-        margin-left: 60px;
-        margin-right: 60px;
+        width: 100px;
+        margin-left:5rem;
+        margin-right: 5em;
     
     }
+  
 
     #img_personale{
        
         position: relative;
-        top:-230px
+        top:-13em
     }
 
     #img_personale img{
-        width: 50%;
+        width: 40vw;
         border-radius: 50%;
     }
     
     
    
+
+
+}
+
+@media (max-width:650px){
+    #img_personale img{
+        width: 50%;
+        border-radius: 50%;
+    }
+    #social{
+       
+        position: relative;
+        top:-140px;
+        
+        
+    
+    }
+    #social img{
+        width: 70px;
+        margin-left:4rem;
+        margin-right: 4rem;
+    
+    }
+
 
 
 }
