@@ -66,12 +66,7 @@ header{
     border:10px solid white
 }
 @media (max-width:950px){
-    #logo{
-        width: 30%;
     
-    
-    }
-
     #cub{
         background-color: #1171fd;
         height: 200px;
@@ -119,6 +114,13 @@ header{
 }
 
 @media (max-width:650px){
+
+    #logo{
+        width: 40%;
+    
+    
+    }
+
     #img_personale img{
         width: 50%;
         border-radius: 50%;
