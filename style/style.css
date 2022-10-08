@@ -1,0 +1,117 @@
+body{
+    margin:0px
+}
+#contenitore{
+    max-width: 1200px;
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+#logo{
+    width: 15%;
+
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+   
+    padding:10px
+}
+
+#cub{
+    background-color: #1171fd;
+    height: 300px;
+    clip-path: polygon(0% 0%,/*alto sx*/
+    100% 0%, /* alto dx*/
+    100% 40%,
+    0% 100%, /* basso sx*/
+    0% 100%);
+
+}
+
+#cont{
+    justify-content: center;
+}
+#social{
+    display: flex;
+    flex-direction: row;
+    transform: rotate(5deg);
+    position: relative;
+    top:-200px;
+    justify-content: center;
+    z-index: 2;
+    
+
+}
+#social img{
+    width: 10%;
+    margin-left:130px ;
+    margin-right:130px ;
+
+}
+#img_personale{
+    text-align: center;
+    position: relative;
+    top:-280px;
+    
+}
+#img_personale img{
+    width: 30%;
+    border-radius: 50px;
+    border:10px solid white
+}
+@media (max-width:950px){
+    #logo{
+        width: 30%;
+    
+    
+    }
+
+    #cub{
+        background-color: #1171fd;
+        height: 200px;
+        clip-path: polygon(0% 0%,/*alto sx*/
+        100% 0%, /* alto dx*/
+        100% 40%,
+        0% 100%, /* basso sx*/
+        0% 100%);
+    
+    }
+
+    #social{
+       
+        position: relative;
+        top:-130px;
+        
+        
+    
+    }
+
+    #social img{
+        width: 20%;
+        margin-left: 60px;
+        margin-right: 60px;
+    
+    }
+
+    #img_personale{
+       
+        position: relative;
+        top:-230px
+    }
+
+    #img_personale img{
+        width: 50%;
+        border-radius: 50%;
+    }
+    
+    
+   
+
+
+}
