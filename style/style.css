@@ -4,7 +4,7 @@ body{
     background-color: #fffbfba6;
 }
 #contenitore{
-    max-width: 1400px;
+    max-width: 1300px;
     min-width: 300px;
     margin-right: auto;
     margin-left: auto;
@@ -297,9 +297,11 @@ footer p{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
     }
 
     .service{
+        margin:10px auto;
         width: 80%;
     }
 
