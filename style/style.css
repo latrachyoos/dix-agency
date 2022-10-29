@@ -35,7 +35,7 @@ header{
     0% 100%, /* basso sx*/
     0% 100%);
     background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
+    animation: gradient 15s ease infinite;
 
 }
 
@@ -209,7 +209,7 @@ header{
     justify-content: space-between;
     
     background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
+    animation: gradient 15s ease infinite;
     
    
 
@@ -238,7 +238,7 @@ footer{
     background-image: linear-gradient(134deg, #595cff, #e81cff) ;
     width: auto;
     background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
+    animation: gradient 15s ease infinite;
     
     padding: 20PX;
     margin: 20px;
@@ -367,6 +367,11 @@ footer p{
 }
 
 @media (max-width:650px){
+    footer, .service, .contattaci, #cub{
+        animation: gradient 8s ease infinite;
+
+
+    }
     header{
         align-items: center;
     }
