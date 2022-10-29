@@ -26,7 +26,7 @@ header{
 }
 
 #cub{
-    background-color: #1171fd;
+    background-image: linear-gradient(90deg, #1171fd, rgb(153, 0, 255)) ;
     height: 300px;
     clip-path: polygon(0% 0%,/*alto sx*/
     100% 0%, /* alto dx*/
@@ -85,9 +85,15 @@ header{
 .separatore{
     width: 7%;
     margin: 20px auto 20px auto ;
-    border: 5px solid #1171fd ;
-    background-color: #1171fd;
-    border-radius: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(90deg, #1171fd, rgb(153, 0, 255)) 1;
+    border-radius: 40px; 
+    -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
     
  
     
@@ -99,10 +105,16 @@ header{
 
 .separatore_sx{
     width: 4%;
-    margin: 20px ;
-    border: 3px solid #1171fd ;
-    background-color: #1171fd;
-    border-radius: 40px;
+    margin: 20px 0px;
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(90deg, #1171fd, rgb(153, 0, 255)) 1;
+    border-radius: 40px; 
+    -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
 
 
 }
@@ -117,8 +129,12 @@ header{
 }
 
 .text h3{
-    color: #2074a3;
+  
+    background: -webkit-linear-gradient(195deg, #1171fd, rgb(153, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-size: 4em;
+    
 }
 
 .con_text{
@@ -172,7 +188,7 @@ header{
     flex-direction: row;
 }
 .service{
-    background-color: #05cabd27;
+    background-image: linear-gradient(137deg,#61f4de,#6e78ff) ;
     padding:30px;
     margin:20px;
     width: 25%;
@@ -187,17 +203,22 @@ header{
 
 
 .service h4{
-    color:#2074a3
+    color:#fdfdfd
+}
+
+.service p{
+    color: white;
+
 }
 
 .read_more{
-    color:#05cabd;
+    color:#ffffff;
     font-weight: bold;
 
 }
 
 footer{
-    background-color: #2074a3;
+    background-image: linear-gradient(134deg, #40c9ff, #e81cff) ;
     width: auto;
     
     padding: 20PX;
