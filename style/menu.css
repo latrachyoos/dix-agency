@@ -24,6 +24,7 @@ nav {
     border-bottom-style: solid;
     border-width: 5px;
     border-image: linear-gradient(90deg, #1171fd, rgb(153, 0, 255)) 1;
+    
    
     
 }
@@ -56,6 +57,19 @@ nav {
 
 }
 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 @media (max-width:650px){
    
     #menu {
@@ -67,6 +81,8 @@ nav {
         height:200%;
         width: 100%;
         background-image: linear-gradient(131deg, #1171fd, rgba(204, 0, 255, 0.836));
+        background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
         
         text-align: left;
         z-index: 3;

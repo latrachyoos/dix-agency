@@ -1,3 +1,4 @@
+
 body{
     margin:0px;
     font-family: "HelveticaNeue",'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -33,6 +34,8 @@ header{
     100% 40%,
     0% 100%, /* basso sx*/
     0% 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 
 }
 
@@ -134,6 +137,8 @@ header{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     font-size: 4em;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
     
 }
 
@@ -166,11 +171,17 @@ header{
 
 .contattaci{
     color: white;
-    background-color: #05cab6;
+    background-image:  linear-gradient(90deg, #1171fd, rgb(153, 0, 255));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 .more{    
-    color: #2074a3;
-    border:2px solid #2074a3;
+    background: -webkit-linear-gradient(195deg, #1171fd, rgb(153, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    border:2px solid rgb(153, 0, 255);
+    
+    
 
 }
 
@@ -188,7 +199,7 @@ header{
     flex-direction: row;
 }
 .service{
-    background-image: linear-gradient(80deg,#89e4d6,#9198fc) ;
+    background-image: linear-gradient(130deg,#0061ff,#e81cff) ;
     padding:30px;
     margin:20px;
     width: 25%;
@@ -197,9 +208,13 @@ header{
     font-size: 1.2em;
     justify-content: space-between;
     
+    background-size: 400% 400%;
+    
    
 
 }
+
+
 
 
 .service h4{
@@ -218,8 +233,11 @@ header{
 }
 
 footer{
-    background-image: linear-gradient(134deg, #40c9ff, #e81cff) ;
+   
+    background-image: linear-gradient(134deg, #595cff, #e81cff) ;
     width: auto;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     
     padding: 20PX;
     margin: 20px;
@@ -236,6 +254,17 @@ footer p{
 }
 
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
 @media (max-width:950px){
