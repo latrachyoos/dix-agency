@@ -1,0 +1,98 @@
+
+nav {
+    display: flex;
+    align-items: center;
+}
+#menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding:0px;
+   
+
+}
+
+#menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding:10px 20px;
+    display: block;
+}
+
+#menu a:hover{
+    border-bottom: 3px solid #1171fd;
+}
+
+.nascondi{
+    position: relative;
+    right: 3000%;
+}
+.mostra{
+    animation:prova 0.2s ;
+    left:0%
+
+}
+.hide{
+    display:none
+}
+
+.close_open{
+    width: 40px;
+    height: 40px;
+    margin-left:20px;
+
+}
+
+@keyframes prova{
+    0% {left:10%}
+    50% {left:5%}
+    100% {left:0%}
+
+}
+
+@media (max-width:650px){
+   
+    #menu {
+        
+        position: fixed;
+   
+        flex-direction: column;
+        top:70px;
+        height:200%;
+        width: 100%;
+        background-color: #116ffd;
+        
+        text-align: left;
+        z-index: 3;
+       
+    
+    }
+
+    header{
+        position: fixed;
+        top:0px;
+        background-color: white;
+        z-index: 3;
+       
+    }
+
+    #menu a{
+       color: white;
+       font-size: 2em;
+      
+    }
+
+    #menu a:hover{
+        border-bottom-style: solid;
+        border-width: 5px;
+        border-image: linear-gradient(90deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.356)) 10;
+       
+     }
+    
+
+   
+   
+
+
+}
