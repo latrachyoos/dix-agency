@@ -316,10 +316,14 @@ footer p{
 }
 
 @media (max-width:650px){
+    header{
+        align-items: center;
+    }
 
     #logo{
-        width: 30%;
-        height: 40%;
+        width: 150px;
+        height: 40px;
+        
     
     
     }
