@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <style>
+
+body{
+    margin:0px;
+    font-family: "HelveticaNeue",'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #fffbfba6;
+}
+#contenitore{
+    max-width: 1300px;
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.sx, .dx{
+    width: 100%;
+
+}
+
+.sx{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.dx{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    
+}
+.polsx{
+
+    background-image: linear-gradient(90deg, #1171fd, rgb(153, 0, 255)) ;
+    
+    
+    border-radius: 37% 63% 84% 16% / 26% 74% 26% 74% ;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+
+
+}
+
+.polsx, .poldx{
+    width: 70%; height: 480px;height: 480px;
+
+}
+
+.poldx{
+    position: relative;
+    right:0;
+    
+
+    background-image: linear-gradient(137deg, #1171fd, rgb(153, 0, 255)) ;
+   
+    
+    border-radius: 86% 14% 60% 40% / 46% 37% 63% 54%  ;
+    background-size: 300% 400%;
+    animation: gradient 15s ease infinite;
+
+
+
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+        </style>
+
+<link rel="stylesheet" href="style/menu.css">
+<script src="js/menu.js"></script>
+    </head>
+    <body>
+        <div id="contenitore">
+            <header>
+                <img id="logo" src="https://i.ibb.co/nbt32Zt/logo.png" alt="logo">
+                <nav>
+                    <ul id="menu" class="nascondi">
+                        <li>
+                            <a href="https://latrachyoos.github.io/dix-agency/">
+                                Home
+    
+                            </a>
+                    
+                        </li>
+                         <li>
+                            <a class="selezionato"  href="#">
+                                I Nostri Servizi
+                                
+                            </a>
+                    
+                        </li>
+                        
+    
+                    </ul>
+                    <a href="#" onclick="menu_func()">
+                    <img class="close_open" id="open" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAAsElEQVRoge3WQQrCMBSE4Xk5R117CG/gQbLrgXoSr+A97M6127xuWmjEKAWxT/g/KE1DAhMoZCQAAP6YrT9O18fZrAwudZ82enGV4vL5KU/v9+P2/tZ4NipZvvfHyzKRqtPEDi9JndyH9UR1gODhl5CH5gHCh3+h/oWkMXx40615AE8pS/WCcOFdub0AAH6NLkQX2nqp0YX2Dk8XAoBvogvRhbZeanShvcPThQAACGQCdDgRWQ5hfYsAAAAASUVORK5CYII=">
+                    <img class="close_open hide" id="close" src="https://img.icons8.com/nolan/64/delete-sign.png" />
+                </a>
+                    
+    
+                </nav>
+                
+                
+    
+           
+            
+            </header>
+            <div id="services">
+                <div class="sx">
+                    <div class="polsx">
+                        
+    
+    
+    
+                    </div>
+
+                </div>
+
+                <div class="dx">
+                    <div class="poldx">
+    
+    
+    
+                    </div>
+
+                </div>
+              
+    
+            
+         
+            </div>
+            
+              
+        
+    
+        
+
+
+
+        </div>
+        
+      
+
+
+
+    </body>
+
+
+
+
+</html>
