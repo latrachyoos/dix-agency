@@ -170,6 +170,13 @@ body{
         --card-width: calc(var(--card-height) * 3);
        
       }
+      .card:hover {
+
+       
+        
+        transition: all 0.1s;
+       
+      }
       
 
 
