@@ -8,3 +8,10 @@ function menu_func(){
     close.classList.toggle("hide")
 
 }
+
+function more(index){
+    let elem = document.getElementsByClassName("card");
+    elem[index].classList.toggle("more")
+
+
+}
