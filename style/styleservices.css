@@ -1,0 +1,177 @@
+body{
+    margin:0px;
+    font-family: "HelveticaNeue",'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #fffbfba6;
+}
+#contenitore{
+    max-width: 1300px;
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+
+
+
+ .services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+.content{
+    text-align: center;
+}
+
+.content h3{
+  
+    background: -webkit-linear-gradient(195deg, #1171fd, rgb(153, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    
+}
+
+
+.card div{
+    margin:10px
+}
+
+@property --rotate {
+    /*https://codepen.io/gayane-gasparyan/pen/jOmaBQK*/
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 70px;
+    --card-width: calc(var(--card-height) * 3);
+   
+  }
+  
+  
+ 
+  
+  
+  .card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    
+    display: flex;
+    padding:30px;
+    align-items: center;
+    color: rgb(253, 253, 253);
+    font-weight: bold;
+    cursor: pointer;
+    
+    margin:20px
+  }
+ 
+   
+  .card:hover {
+    color:white;
+    height: fit-content;
+    
+    background: -webkit-linear-gradient(195deg, #1171fd, rgb(153, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    display: flex;
+    flex-direction: column;
+   
+    
+    transition: all 1s;
+   
+  }
+  .card:hover:before, .card:hover:after {
+    animation: none;
+    transition: all 0.3s;
+    
+    opacity: 0;
+  }
+  
+  .card::before {
+    content: "";
+    width: 102%;
+    height: 104%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #1171fd 40%, rgb(153, 0, 255));
+      position: absolute;
+      z-index: -1;
+      top: -2%;
+      left: -1%;
+      animation: spin 6s linear infinite;
+  }
+  
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      ,  #1171fd 40%, rgb(153, 0, 255));
+      opacity: 1;
+    transition: opacity .10s;
+    animation: spin 6s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+@media (max-width:650px){
+    
+    #cont{
+        position: relative;
+        top:7em;
+        width: 100%;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @property --rotate {
+        syntax: "<angle>";
+        initial-value: 132deg;
+        inherits: false;
+      }
+      
+      :root {
+        --card-height: 100px;
+        --card-width: calc(var(--card-height) * 3);
+       
+      }
+      
+
+
+
+}

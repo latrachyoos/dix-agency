@@ -3,11 +3,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
+    align-items: center;
    
     padding:10px
 }
 #logo{
-    width: 15%;
+    width: 12%;
+    height: 50%;
 
 
 }
@@ -92,6 +94,12 @@ nav {
 }
 
 @media (max-width:650px){
+    #logo{
+        width: 23%;
+        height: 50%;
+    
+    
+    }
    
     #menu {
         
